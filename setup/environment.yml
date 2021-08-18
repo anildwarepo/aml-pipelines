@@ -1,0 +1,20 @@
+name: aml
+dependencies:
+  - python=3.7
+  - pip
+  - pip:
+    - azureml-core
+    - azureml-sdk[notebooks,automl]
+    - pillow
+variables:
+  TENANT_ID: '<>'
+  SUBSCRIPTION_ID: '<>'
+  RESOURCE_GROUP: 'ml'
+  WORKSPACE_NAME: 'ml-service'
+  WORKSPACE_REGION: 'westus2'
+  AML_COMPUTE_TARGET: 'gpucluster'
+  EXPERIMENT_NAME: 'fleet-pipeline'
+  PROJECT_FOLDER: 'aml-pipelines-scripts'
+  DATA_LOCATION: 'aml-pipelines-data'
+  TEST_DATA_LOCATION: 'aml-pipelines-test-data'
+  COGNITIVE_SERVICES_API_KEY: '<>'
